@@ -6,8 +6,9 @@ body{
 
 }
 label{
-    /* background-color: blue; */
-    /* color: yellow; */
     display: inline-block;
     margin: 0.5rem 0;
+}
+textarea{
+    color:green
 }
