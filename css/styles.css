@@ -42,9 +42,8 @@ input, textarea, select{
 }
 
 input, textarea{
-    background-color: rgba(251, 251, 251, 0.229);
-    border:1px solid rgba(139, 147, 103, 0.225)
-    color: darkblue;
+    background-color: white;
+    border:1px solid rgba(139, 147, 103, 0.225);
 }
 
 .inline{
@@ -65,5 +64,5 @@ input[type="submit"]{
 }
 
 a {
-    /* text-decoration: none; */
+    text-decoration: none;
 }
