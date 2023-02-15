@@ -14,12 +14,26 @@
     <form action="#">
       <!--Fieldset 1 | First Name, Last Name, Email, Password fields-->
       <fieldset>
-        <label for="#">Enter your first name:<input type="text" required></label>
-        <label for="#">Enter your last name:<input type="text" required></label>
-        <label for="#">Enter your e-mail:<input type="email" required></label>
-        <label for="#">Enter your password:<input type="password" required></label>
+        <label for="#"
+          >Enter your first name:<input type="text" required
+        /></label>
+        <label for="#"
+          >Enter your last name:<input type="text" required
+        /></label>
+        <label for="#">Enter your e-mail:<input type="email" required /></label>
+        <label for="#"
+          >Enter your password:<input
+            type="password"
+            minlength="4"
+            maxlength="20"
+            pattern="[a-z0-5]{8}"
+            required
+        /></label>
       </fieldset>
       <!--Fieldset 2-->
+      <label for="#"><input type="radio" name="" id=""></label>
+      <label for="#"><input type="radio" name="" id=""></label>
+      <label for="#"><input type="checkbox" required></label>
       <fieldset></fieldset>
       <!--Fieldset 3-->
       <fieldset></fieldset>
