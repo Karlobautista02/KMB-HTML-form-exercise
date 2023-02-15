@@ -10,27 +10,29 @@
   <body>
     <!--Form Title-->
     <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
     <!--FORM-->
     <form action="#">
       <!--Fieldset 1 | First Name, Last Name, Email, Password fields-->
       <fieldset>
         <label for="#"
-          >Enter your first name:<input type="text" required
+          >Enter your first name:<input type="text" name="firstName" required
         /></label>
         <label for="#"
-          >Enter your last name:<input type="text" required
+          >Enter your last name:<input type="text" name="lastName" required
         /></label>
-        <label for="#">Enter your e-mail:<input type="email" required /></label>
+        <label for="#">Enter your e-mail:<input type="email" name="email" required /></label>
         <label for="#"
           >Enter your password:<input
             type="password"
             minlength="4"
             maxlength="20"
             pattern="[a-z0-5]{8}"
+            name="password"
             required
         /></label>
       </fieldset>
-      <!--Fieldset 2-->
+      <!--Fieldset 2 | Account Type & Terms and Conditions-->
       <fieldset>
         <label for="#"
           ><input type="radio" name="account-type" id="" />Personal
@@ -47,26 +49,26 @@
           ></label
         >
       </fieldset>
-      <!--Fieldset 3-->
+      <!--Fieldset 3 | Profile Picture, referrers & bio input-->
       <fieldset>
-        <label for="#">Upload a profile picture: <input type="file" /></label>
+        <label for="#">Upload a profile picture: <input type="file" name="fileUpload" /></label>
         <label for="#"
-          >Input your age(years): <input type="number" min="13" max="120"
+          >Input your age(years): <input type="number" min="13" max="120" name="age"
         /></label>
         <label for="">
           How did you hear from us?
-          <select name="" id="">
+          <select name="referrer" id="">
             <option value="">--select one--</option>
-            <option value="1">Family & friends</option>
-            <option value="2">Colleagues</option>
-            <option value="3">Online</option>
-            <option value="4">Others</option>
+            <option value="1" name="family&friends">Family & friends</option>
+            <option value="2" name="colleagues">Colleagues</option>
+            <option value="3" name="online">Online</option>
+            <option value="4" name="others">Others</option>
           </select>
         </label>
         <label for="#">
           Provide a bio:
           <textarea
-            name=""
+            name="bio"
             id=""
             cols="30"
             rows="3"
